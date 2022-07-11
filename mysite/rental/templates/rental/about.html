@@ -1,0 +1,305 @@
+{% extends 'rental/base.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  {% block head %}
+  {% endblock %}
+</head>
+
+<body>
+  {% block body %}
+
+  <!-- ======= Property Search Section ======= -->
+  
+         
+
+  -- End Header/Navbar -->
+
+  <main id="main">
+
+    <!-- ======= Intro Single ======= -->
+    <section class="intro-single">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-8">
+            <div class="title-single-box">
+              <h1 class="title-single">About</h1>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-4">
+            <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="{% url 'rental:index' %}">Home</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  About
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Intro Single-->
+
+    <!-- ======= About Section ======= -->
+    <section class="section-about">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 position-relative">
+            <div class="about-img-box">
+              <img src="{% static 'assets/img/about1.jpg' %}"  width="90%"  alt="" class="img-fluid">
+            </div>
+            <div class="sinse-box" style="margin-left: 750px;">
+              <h3 class="sinse-title"  style="font-size: 30px;">Room On Rent
+                
+                
+              </h3>
+              <p>Find Your Room</p>
+            </div>
+          </div>
+          <div class="col-md-12 section-t8 position-relative">
+            <div class="row">
+              <div class="col-md-6 col-lg-5">
+                <img src="{% static 'assets/img/rent.jpg' %}" alt="" class="img-fluid">
+              </div>
+              <div class="col-lg-2  d-none d-lg-block position-relative">
+                <div class="title-vertical d-flex justify-content-start">
+                  <span>Exclusive Property</span>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-5 section-md-t3">
+                <div class="title-box-d">
+                  <h3 class="title-d">Put Your 
+                    <span class="color-d">Room</span> On
+                    <br> RENT.
+                  </h3>
+                </div>
+                <p class="color-text-a">
+                  In our project we are going to introduce a new system through the  medium of internet that we can able to book a room for rent in our site so that we the people will find the room in any of the city.
+                </p>
+                <p class="color-text-a">
+                  So that the student or any of the office employee who found difficulty in getting room or home in rent can find the room of home in rent very easily
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======Team Section ======= -->
+    <section class="section-agents section-t8">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title-wrap d-flex justify-content-between">
+              <div class="title-box">
+                <h2 class="title-a">Meet Our Team</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card-box-d">
+              <div class="card-img-d">
+                <img src="{% static 'assets/img/vb.jfif' %}" alt="" class="img-d img-fluid">
+              </div>
+              <div class="card-overlay card-overlay-hover">
+                <div class="card-header-d">
+                  <div class="card-title-d align-self-center">
+                    <h3 class="title-d">
+                      <a  class="link-two">Viraj Gami
+                        <p class="content-d color-text-a">
+                         Member
+                        </p>
+                       </a>
+                    </h3>
+                  </div>
+                </div>
+                <div class="card-body-d">
+                  
+                  <div class="info-agents color-a">
+                    <p>
+                      <strong>Phone: </strong> +91 97145 28589
+                    </p>
+                    <p>
+                      <strong>Email: </strong>Viraj.gami18103
+                      @marwadieducation.edu.in 
+                    </p>
+                  </div>
+                </div>
+                <div class="card-footer-d">
+                  <div class="socials-footer d-flex justify-content-center">
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <a href="#" class="link-one">
+                          <i class="bi bi-facebook" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#" class="link-one">
+                          <i class="bi bi-twitter" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#" class="link-one">
+                          <i class="bi bi-instagram" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#" class="link-one">
+                          <i class="bi bi-linkedin" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-box-d">
+              <div class="card-img-d">
+                <img src="{% static 'assets/img/shubham.jfif' %}" style="width: 350px ;height: 350px;" alt="" class="img-d img-fluid">
+              </div>
+              <div class="card-overlay card-overlay-hover">
+                <div class="card-header-d">
+                  <div class="card-title-d align-self-center">
+                    <h3 class="title-d">
+                      <a class="link-two">Shubham khandhadiya
+                        <p class="content-d color-text-a">
+                          Member
+                         </p></a>
+                    </h3>
+                  </div>
+                </div>
+                <div class="card-body-d">
+                 
+                  <div class="info-agents color-a">
+                    <p>
+                      <strong>Phone: </strong> +91 94087 28823
+                    </p>
+                    <p>
+                      <strong>Email: </strong> Shubham.khandhadiya18000
+                      @marwadieducation.edu.in
+                    </p>
+                  </div>
+                </div>
+                <div class="card-footer-d">
+                  <div class="socials-footer d-flex justify-content-center">
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <a href="#" class="link-one">
+                          <i class="bi bi-facebook" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#" class="link-one">
+                          <i class="bi bi-twitter" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#" class="link-one">
+                          <i class="bi bi-instagram" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#" class="link-one">
+                          <i class="bi bi-linkedin" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#" class="link-one">
+                          <i class="bi bi-dribbble" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-box-d">
+              <div class="card-img-d">
+                <img src="{% static 'assets/img/rushab.jfif' %}"  style="width: 350px ;height: 350px;" alt="" class="img-d img-fluid">
+              </div>
+              <div class="card-overlay card-overlay-hover">
+                <div class="card-header-d">
+                  <div class="card-title-d align-self-center">
+                    <h3 class="title-d">
+                      <a class="link-two">Rushabh Gohel
+                        <p class="content-d color-text-a">
+                          Member
+                         </p></a>
+                    </h3>
+                  </div>
+                </div>
+                <div class="card-body-d">
+                 
+                  <div class="info-agents color-a">
+                    <p>
+                      <strong>Phone: </strong>+91 91067 72967
+                    </p>
+                    <p>
+                      <strong>Email: </strong> rushabh.gohel18002
+                      @marwadieducation.edu.in
+                    </p>
+                  </div>
+                </div>
+                <div class="card-footer-d">
+                  <div class="socials-footer d-flex justify-content-center">
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <a href="#" class="link-one">
+                          <i class="bi bi-facebook" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#" class="link-one">
+                          <i class="bi bi-twitter" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#" class="link-one">
+                          <i class="bi bi-instagram" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#" class="link-one">
+                          <i class="bi bi-linkedin" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#" class="link-one">
+                          <i class="bi bi-dribbble" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section-->
+
+  </main><!-- End #main -->
+
+
+  
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  
+{% endblock %}
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+{% extends 'rental/base.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% block head %}
+	{% endblock %}
+
+  
+  
+</head>
+
+<body>
+  {% block body %}
+  
+
+    <!-- ======= Latest Properties Section ======= -->
+    <section class="section-property section-t8">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title-wrap d-flex justify-content-between">
+              <div class="title-box">
+                <h2 class="title-a">My Rooms</h2>
+                
+              </div>
+              <div class="title-link">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+      
+
+    <section class="property-grid grid">
+      <div class="container">
+       
+        <div class="row">
+          
+          {% for room in room %}
+            
+          <div class="col-md-4">
+            <div class="card-box-a card-shadow">
+              <div class="img-box-a">
+                <img src="{{room.image.url}}" alt="" class="img-a img-fluid" style="width: 500px;height:450px;">
+              </div>
+              <div class="card-overlay">
+                <div class="card-overlay-a-content">
+                  <div class="card-header-a">
+                    <h2 class="card-title-a">
+                      <a>ID :  {{room.roomid}}
+                        <br/>
+                      <a>Name :  {{room.name}}
+                        <br />Location :  {{room.location}}</a>
+                    </h2>
+                  </div>
+                  <div class="card-body-a">
+                    <div class="price-box d-flex">
+                      <span class="price-a">rent | ₹ {{room.rent}}</span>
+                    </div>
+                    <a href="{% url 'rental:deleteroom' room.id  %}"   style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: large;"   class="link-a">Click here to Remove Home
+                      <span class="bi bi-chevron-right"></span>
+                    </a>
+                  </div>
+                  <div class="card-footer-a">
+                    <ul class="card-info d-flex justify-content-around">
+                      <li>
+                        <h4 class="card-info-title">Area</h4>
+                        <span>{{room.area}}
+                          sq. ft.
+                        </span>
+                      </li>
+                      <li>
+                        <h4 class="card-info-title">Beds</h4>
+                        <span>{{room.bed}}</span>
+                      </li>
+                      <li>
+                        <h4 class="card-info-title">Baths</h4>
+                        <span>{{room.bath}}</span>
+                      </li>
+                      <li>
+                        <h4 class="card-info-title">Garages</h4>
+                        <span>{{room.parking}}</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {% endfor %}
+       
+        
+        </div>
+      </div>
+    </section>
+
+
+  {% endblock %}
+ 
+  </script>
+</body>
+
+</html>
